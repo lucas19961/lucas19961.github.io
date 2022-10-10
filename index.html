@@ -10,23 +10,184 @@
             background-color: #212020;
         }
 
-        h1 {
-            text-align: center;
+        .logo {
+            display: flex;
+            margin-left: auto;
+            font-weight:bolder;
+            font-size: large;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
-
-       .kok {
-            display: block;
+        
+        .logo > img {
             margin-left: auto;
             margin-right: auto;
-            width: 50%;
+            width: 96px;
+            max-height: 96px;
+            margin-bottom: 10px;
         }
+
+        th,
+    td {
+        padding: 0.5em;
+        background-color: rgba(145, 145, 145, 0.1);
+    }
+
+    td {
+        word-break: break-word;
+    }
+
+    th {
+        background-color: #121212;
+        padding: 10px;
+    }
+
+    tr {
+        transition: all 0.1s linear;
+        border: 10px solid white;
+    }
+
+    tbody tr:hover {
+        background-color: rgba(145, 145, 145, 0.1);
+        cursor: zoom-in;
+    }
+
+    button,
+    input {
+        font-size: 1.2em;
+        color: #ababab;
+        margin-bottom: 5px;
+        padding: 5px;
+        border: 1px solid transparent;
+        border-radius: 5px;
+        color: white;
+        background-color: #121212;
+        transition: all 0.25s linear;
+    }
+
+    input {
+        width: 10em;
+    }
+
+    input[type="text"]:focus {
+        border: 1px solid #555;
+        outline: none;
+    }
+
+    button {
+        min-width: 4.5em;
+        text-align: center;
+        margin-right: 5px;
+    }
+
+    button.active,
+    button:hover {
+        cursor: pointer;
+        background-color: #333;
+    }
+
+    button.active {
+        border: 1px solid white;
+        font-weight: bold;
+    }
+
+    .filter {
+        padding: 0 5px;
+        overflow: hidden;
+    }
+
+    .search {
+        float: right;
+    }
+
+    .details {
+        max-width: max-content;
+        margin: auto;
+        padding: 5px;
+        border: 1px solid #555;
+        background-color: rgba(145, 145, 145, 0.1);
+    }
+
+    .details:hover {
+        cursor: zoom-out;
+    }
+
+    .details th,
+    .details td {
+        padding: 0;
+        background-color: inherit;
+    }
+
+    .details th {
+        text-align: left;
+        padding-right: 10px;
+    }
+
+    .extended {
+        margin-top: 5px;
+        cursor: auto;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .bold {
+        font-weight: bold;
+    }
+
    
 
     </style>
+   <!--  <div class="logo">
+        <img src="https://cdn.7tv.app/emote/60af05d6b74ea8ff79492d06/3x" />
+        <p>Bot</p>
+    </div> -->
 <body>
+    <div class="logo">
+        <p style="margin-left: auto; margin-right: auto; line-height: 7; text-transform: uppercase;"><img style="float: left;" src="https://cdn.7tv.app/emote/60af05d6b74ea8ff79492d06/3x"/> Bot</p>
+    </div>
 
-<h1>Hello World</h1>
-<img class="kok" src="https://cdn.7tv.app/emote/61e66081095be332e347e5a4/4x" />
-<p>I'm hosted with GitHub Pages.</p>
+
+<div class="container">
+    <div class="filter">
+
+    </div>
+    <div class="data">
+        <div class="details">
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <td>Command</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                           
+                    
+                </tr>
+                <tr>
+                <th>Access</th>
+                <td>command.access</td>
+                </tr>
+                <tr>
+                    <th>Cooldown</th>
+                    <td>Cooldown</td>
+                </tr>
+                <tr>
+                    <th>Usage</th>
+                    <td>Usage</td>
+                </tr>
+                <tr>
+                    <th>Description</th>
+                    <td>command.descript</td>
+                </tr>
+            </table>
+            
+    </div>
+</div>
 </body>
 </html>

@@ -1,331 +1,38 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
+
     <head>
-        <title>lucas19961 | Commands</title>
+        <title>Susgeebot</title>
         <link rel="icon" href="https://cdn.7tv.app/emote/60b0c36388e8246a4b120d7e/2x" />
-        
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="public/css/main.css">
+        <script src="public/js/main.js"></script>
+        <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css">
     </head>
-    <style>
-        body {
-            background-color: #212020;
-        }
-
-        .logo {
-            display: flex;
-            margin-left: auto;
-            font-weight:bolder;
-            font-size: large;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        }
-        
-        .logo > img {
-            margin-left: auto;
-            margin-right: auto;
-            width: 96px;
-            max-height: 96px;
-            margin-bottom: 10px;
-        }
-
-        th,
-    td {
-        padding: 0.5em;
-        background-color: rgba(145, 145, 145, 0.1);
-    }
-
-    td {
-        word-break: break-word;
-    }
-
-    th {
-        background-color: #121212;
-        padding: 10px;
-    }
-
-    tr {
-        transition: all 0.1s linear;
-        border: 10px solid white;
-    }
-
-    tbody tr:hover {
-        background-color: rgba(145, 145, 145, 0.1);
-        cursor: zoom-in;
-    }
-
-    button,
-    input {
-        font-size: 1.2em;
-        color: #ababab;
-        margin-bottom: 5px;
-        padding: 5px;
-        border: 1px solid transparent;
-        border-radius: 5px;
-        color: white;
-        background-color: #121212;
-        transition: all 0.25s linear;
-    }
-
-    input {
-        width: 10em;
-    }
-
-    input[type="text"]:focus {
-        border: 1px solid #555;
-        outline: none;
-    }
-
-    button {
-        min-width: 4.5em;
-        text-align: center;
-        margin-right: 5px;
-    }
-
-    button.active,
-    button:hover {
-        cursor: pointer;
-        background-color: #333;
-    }
-
-    button.active {
-        border: 1px solid white;
-        font-weight: bold;
-    }
-
-    .filter {
-        padding: 0 5px;
-        overflow: hidden;
-    }
-
-    .search {
-        float: right;
-    }
-
-    .details {
-        max-width: max-content;
-        margin: auto;
-        padding: 5px;
-        border: 1px solid #555;
-        background-color: rgba(145, 145, 145, 0.1);
-    }
-
-    .details:hover {
-        cursor: zoom-out;
-    }
-
-    .details th,
-    .details td {
-        padding: 0;
-        background-color: inherit;
-    }
-
-    .details th {
-        text-align: left;
-        padding-right: 10px;
-    }
-
-    .extended {
-        margin-top: 5px;
-        cursor: auto;
-    }
-
-    .center {
-        text-align: center;
-    }
-
-    .bold {
-        font-weight: bold;
-    }
-
-   
-
-    </style>
-   <!--  <div class="logo">
-        <img src="https://cdn.7tv.app/emote/60af05d6b74ea8ff79492d06/3x" />
-        <p>Bot</p>
-    </div> -->
-<body>
-    <div class="logo">
-        <p style="margin-left: auto; margin-right: auto; line-height: 7; text-transform: uppercase;"><img style="float: left;" src="https://cdn.7tv.app/emote/60af05d6b74ea8ff79492d06/3x"/> Bot</p>
-    </div>
 
 
-<div class="container">
-    <div class="filter">
+    <body>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <a class="navbar-brand right" href="/">Susgeebot <img class="navbarImage" src="https://cdn.7tv.app/emote/60b0c36388e8246a4b120d7e/2x" alt="Susgee"></a>
+            <div class="navbar-collapse" id="navbarText">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="/contact"> Contact </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="/faq"> FAQ </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="text-center">
+                <img src="https://cdn.7tv.app/emote/616544c8b12925a668d84464/4x" alt="Susgee Gif">
+            </div>
 
-    </div>
+
+        </nav>
+    </body>
 
 
-    <table class="commands">
-        <thead>
-            <tr>
-                <th>Command</th>
-                <th>Aliase</th>
-                <th>Description</th>
-                <th>Cooldown</th>
-                <th>Usage</th>
-                <th>Access</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td class="center bold">%</td>
-                <td class="center"></td>
-                <td class="desc">sends a random precentage between 0% and 100%</td>
-                <td class="center">3 seconds</td>
-                <td class="center">/</td>
-                <td class="center">everyone</td>
-            </tr>
-            <tr>
-                <td class="center bold">7tvupdates</td>
-                <td class="center"></td>
-                <td class="desc">enable/disable 7TV notifications in chat for channel emote changes</td>
-                <td class="center">10 seconds</td>
-                <td class="center">/</td>
-                <td class="center">Mod</td>
-            </tr>
-            <tr>
-                <td class="center bold">8ball</td>
-                <td class="center"></td>
-                <td class="desc">answers your question</td>
-                <td class="center">3 seconds</td>
-                <td class="center">/</td>
-                <td class="center">everyone</td>
-            </tr>
-            <tr>
-                <td class="center bold">animal</td>
-                <td class="center">cat, pussy, 🐱, dog, 🐶, fox, 🦊, dog2 </td>
-                <td class="desc">sends a random image of an animal</td>
-                <td class="center">3 seconds</td>
-                <td class="center">/</td>
-                <td class="center">everyone</td>
-            </tr>
-            <tr>
-                <td class="center bold">announce</td>
-                <td class="center">ann</td>
-                <td class="desc">Spam a Twitch announcement in chat with all the available colors</td>
-                <td class="center">15 seconds</td>
-                <td class="center">?announce -message- </td>
-                <td class="center">MOD</td>
-            </tr>
-            <tr>
-                <td class="center bold">antiping</td>
-                <td class="center"></td>
-                <td class="desc">Test your regex</td>
-                <td class="center"></td>
-                <td class="center"></td>
-                <td class="center"></td>
-            </tr>
-            
-            <tr>
-                <td class="center bold">avatar</td>
-                <td class="center">pfp, av</td>
-                <td class="desc">sends the specified user Profielpicture</td>
-                <td class="center">4 seconds</td>
-                <td class="center">?avatar [username]</td>
-                <td class="center">everyone</td>
-            </tr>
-            
-            <tr>
-                <td class="center bold">{command.name}</td>
-                <td class="center"></td>
-                <td class="desc">{command.description}</td>
-                <td class="center">{command.cooldown} seconds</td>
-                <td class="center"></td>
-                <td class="center"></td>
-            </tr>
-            
-            <tr>
-                <td class="center bold">{command.name}</td>
-                <td class="center"></td>
-                <td class="desc">{command.description}</td>
-                <td class="center">{command.cooldown} seconds</td>
-                <td class="center"></td>
-                <td class="center"></td>
-            </tr>
-            
-            <tr>
-                <td class="center bold">{command.name}</td>
-                <td class="center"></td>
-                <td class="desc">{command.description}</td>
-                <td class="center">{command.cooldown} seconds</td>
-                <td class="center"></td>
-                <td class="center"></td>
-            </tr>
-            
-            <tr>
-                <td class="center bold">{command.name}</td>
-                <td class="center"></td>
-                <td class="desc">{command.description}</td>
-                <td class="center">{command.cooldown} seconds</td>
-                <td class="center"></td>
-                <td class="center"></td>
-            </tr>
-            
-            <tr>
-                <td class="center bold">{command.name}</td>
-                <td class="center"></td>
-                <td class="desc">{command.description}</td>
-                <td class="center">{command.cooldown} seconds</td>
-                <td class="center"></td>
-                <td class="center"></td>
-            </tr>
-            
-            <tr>
-                <td class="center bold">{command.name}</td>
-                <td class="center"></td>
-                <td class="desc">{command.description}</td>
-                <td class="center">{command.cooldown} seconds</td>
-                <td class="center"></td>
-                <td class="center"></td>
-            </tr>
-            
-            <tr>
-                <td class="center bold">{command.name}</td>
-                <td class="center"></td>
-                <td class="desc">{command.description}</td>
-                <td class="center">{command.cooldown} seconds</td>
-                <td class="center"></td>
-                <td class="center"></td>
-            </tr>
-            
-            <tr>
-                <td class="center bold">{command.name}</td>
-                <td class="center"></td>
-                <td class="desc">{command.description}</td>
-                <td class="center">{command.cooldown} seconds</td>
-                <td class="center"></td>
-                <td class="center"></td>
-            </tr>
-            
-            <tr>
-                <td class="center bold">{command.name}</td>
-                <td class="center"></td>
-                <td class="desc">{command.description}</td>
-                <td class="center">{command.cooldown} seconds</td>
-                <td class="center"></td>
-                <td class="center"></td>
-            </tr>
-            
-            <tr>
-                <td class="center bold">{command.name}</td>
-                <td class="center"></td>
-                <td class="desc">{command.description}</td>
-                <td class="center">{command.cooldown} seconds</td>
-                <td class="center"></td>
-                <td class="center"></td>
-            </tr>
-            
-            <tr>
-                <td class="center bold">{command.name}</td>
-                <td class="center"></td>
-                <td class="desc">{command.description}</td>
-                <td class="center">{command.cooldown} seconds</td>
-                <td class="center"></td>
-                <td class="center"></td>
-            </tr>
-            
-
-        </tbody>
-    </table>
-</div>
-</body>
 </html>

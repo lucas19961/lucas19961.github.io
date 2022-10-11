@@ -1,0 +1,39 @@
+.navbarImage {
+    width: 20%;
+    height: 20%;
+}
+
+body {
+    background-color: #2B2D2F !important;
+}
+
+.navbar a {
+    font-size: 15px;
+}
+
+.text-center a {
+    color: dodgerblue !important;
+}
+
+.navbar {
+    text-transform: none;
+    padding: 1rem 1rem;
+}
+
+.bg-dark {
+    background-color: #212529 !important;
+}
+
+.margin {
+    margin-top: 2%;
+}
+
+.margin-footer {
+    margin-top: 5%;
+}
+
+.margin-footer p {
+    font-size: 15px;
+}
+
+

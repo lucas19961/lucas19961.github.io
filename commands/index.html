@@ -24,6 +24,12 @@
                 <li class="nav-item">
                     <a class="nav-link text-white" href="/commands"> Commands </a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="https://logs.lucas19961.de"> Logs </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="https://emotes.lucas19961.de"> Emotes </a>
+                </li>
 
                 <li class="nav-item">
                     <a class="nav-link text-white" href="/faq"> FAQ </a>
@@ -41,7 +47,7 @@
     <input type="text" id="SearchInput" onkeyup="searchTable()" placeholder="Suche nach Commands...">
     <table id="table" class="table">
         <thead>
-            <tr>
+            <tr style='position: sticky; top: -1px; background: #212529;'>
                 <th>Name</th>
                 <th>Aliase</th>
                 <th>Beschreibung</th>
@@ -49,7 +55,7 @@
                 <th>User braucht</th>
                 <th>Bot braucht</th>
             </tr>
-      
+
         </thead>
         <tbody>
             <tr>
@@ -178,7 +184,7 @@
                 <td>/</td>
                 <td>Aktiviert Ban-Update Nachrichten für geloggte Channel siehe ?channels</td>
                 <td>/</td>
-                 <td><img src="https://cdn.7tv.app/emote/60aeef1fa564afa26e1b9f86/1x" class="center">
+                <td><img src="https://cdn.7tv.app/emote/60aeef1fa564afa26e1b9f86/1x" class="center">
                     <p style="text-align: center;">Moderator</p>
                 </td>
                 <td><img src="https://cdn.7tv.app/emote/60dba3ed232824591f5e904c/1x" class="center">
@@ -226,7 +232,7 @@
                 <td>/</td>
                 <td><img src="https://cdn.7tv.app/emote/60ae4a875d3fdae583c64313/1x"> 💨 🎈 ⠀ ⠀ ⠀ ⠀ 🌵 </td>
                 <td>3 Seconds</td>
-                   <td><img src="https://cdn.7tv.app/emote/60aeef1fa564afa26e1b9f86/1x" class="center">
+                <td><img src="https://cdn.7tv.app/emote/60aeef1fa564afa26e1b9f86/1x" class="center">
                     <p style="text-align: center;">Moderator</p>
                 </td>
                 <td><img src="https://cdn.7tv.app/emote/60dba3ed232824591f5e904c/1x" class="center">
@@ -317,14 +323,291 @@
                     <p style="text-align: center;">Viewer</p>
                 </td>
             </tr>
+            <tr>
+                <td>chatters</td>
+                <td></td>
+                <td>sendet die Chatteranzahl eines Channels</td>
+                <td>5 Seconds</td>
+                <td><img src="https://cdn.7tv.app/emote/60dba3ed232824591f5e904c/1x" class="center">
+                    <p style="text-align: center;">Viewer</p>
+                </td>
+                <td><img src="https://cdn.7tv.app/emote/60dba3ed232824591f5e904c/1x" class="center">
+                    <p style="text-align: center;">Viewer</p>
+                </td>
+            </tr>
+            <tr>
+                <td>chatting</td>
+                <td></td>
+                <td>sendet die Anzahl gesendeter Nachrichten eines Users in einem Channels</td>
+                <td></td>
+                <td><img src="https://cdn.7tv.app/emote/60dba3ed232824591f5e904c/1x" class="center">
+                    <p style="text-align: center;">Viewer</p>
+                </td>
+                <td><img src="https://cdn.7tv.app/emote/60dba3ed232824591f5e904c/1x" class="center">
+                    <p style="text-align: center;">Viewer</p>
+                </td>
+            </tr>
+            <tr>
+                <td>checkignore</td>
+                <td></td>
+                <td>schaut ob ein User auf der Ignoreliste ist</td>
+                <td></td>
+                <td><img src="https://cdn.7tv.app/emote/60dba3ed232824591f5e904c/1x" class="center">
+                    <p style="text-align: center;">Viewer</p>
+                </td>
+                <td><img src="https://cdn.7tv.app/emote/60dba3ed232824591f5e904c/1x" class="center">
+                    <p style="text-align: center;">Viewer</p>
+                </td>
+            </tr>
+            <tr>
+                <td>checklive</td>
+                <td></td>
+                <td>sendet eine Liste welche Live Announcemnts im Channel aktiviert sind</td>
+                <td></td>
+                <td><img src="https://cdn.7tv.app/emote/60dba3ed232824591f5e904c/1x" class="center">
+                    <p style="text-align: center;">Viewer</p>
+                </td>
+                <td><img src="https://cdn.7tv.app/emote/60dba3ed232824591f5e904c/1x" class="center">
+                    <p style="text-align: center;">Viewer</p>
+                </td>
+            </tr>
+            <tr>
+                <td>clear</td>
+                <td></td>
+                <td>leert den Chatlog</td>
+                <td>10 Seconds</td>
+                <td><img src="https://cdn.7tv.app/emote/60aeef1fa564afa26e1b9f86/1x" class="center">
+                    <p style="text-align: center;">Moderator</p>
+                </td>
+                <td><img src="https://cdn.7tv.app/emote/60aeef1fa564afa26e1b9f86/1x" class="center">
+                    <p style="text-align: center;">Moderator</p>
+                </td>
+            </tr>
+            <tr>
+                <td>coinflip</td>
+                <td>cf</td>
+                <td>Ja oder Nein</td>
+                <td>5 Seconds</td>
+                <td><img src="https://cdn.7tv.app/emote/60dba3ed232824591f5e904c/1x" class="center">
+                    <p style="text-align: center;">Viewer</p>
+                </td>
+                <td><img src="https://cdn.7tv.app/emote/60dba3ed232824591f5e904c/1x" class="center">
+                    <p style="text-align: center;">Viewer</p>
+                </td>
+            </tr>
+            <tr>
+                <td>copypasta</td>
+                <td></td>
+                <td>sendet die eine copypasta von <a href="https://twitchquotes.com">twitchquotes.com</a></td>
+                <td></td>
+                <td><img src="https://cdn.7tv.app/emote/60dba3ed232824591f5e904c/1x" class="center">
+                    <p style="text-align: center;">Viewer</p>
+                </td>
+                <td><img src="https://cdn.7tv.app/emote/60dba3ed232824591f5e904c/1x" class="center">
+                    <p style="text-align: center;">Viewer</p>
+                </td>
+            </tr>
+            <tr>
+                <td>dadjoke</td>
+                <td></td>
+                <td>sendet dumme Witze</td>
+                <td>3 Seconds</td>
+                <td><img src="https://cdn.7tv.app/emote/60dba3ed232824591f5e904c/1x" class="center">
+                    <p style="text-align: center;">Viewer</p>
+                </td>
+                <td><img src="https://cdn.7tv.app/emote/60dba3ed232824591f5e904c/1x" class="center">
+                    <p style="text-align: center;">Viewer</p>
+                </td>
+            </tr>
+            <tr>
+                <td>dank</td>
+                <td></td>
+                <td><img src="https://cdn.7tv.app/emote/60ae4a875d3fdae583c64313/1x">......</td>
+                <td>7 Seconds</td>
+                <td><img src="https://cdn.7tv.app/emote/60aeef1fa564afa26e1b9f86/1x" class="center">
+                    <p style="text-align: center;">Moderator</p>
+                </td>
+                <td><img src="https://cdn.7tv.app/emote/60dba3ed232824591f5e904c/1x" class="center">
+                    <p style="text-align: center;">Viewer</p>
+                </td>
+            </tr>
+            <tr>
+                <td>deletesuggest</td>
+                <td></td>
+                <td>löscht deine eingereichten Suggests</td>
+                <td></td>
+                <td><img src="https://cdn.7tv.app/emote/60dba3ed232824591f5e904c/1x" class="center">
+                    <p style="text-align: center;">Viewer</p>
+                </td>
+                <td><img src="https://cdn.7tv.app/emote/60dba3ed232824591f5e904c/1x" class="center">
+                    <p style="text-align: center;">Viewer</p>
+                </td>
+            </tr>
+            <tr>
+                <td>dislikes</td>
+                <td></td>
+                <td>sendet die Dislikes von einem Youtube Video</td>
+                <td>5 Seconds</td>
+                <td><img src="https://cdn.7tv.app/emote/60dba3ed232824591f5e904c/1x" class="center">
+                    <p style="text-align: center;">Viewer</p>
+                </td>
+                <td><img src="https://cdn.7tv.app/emote/60dba3ed232824591f5e904c/1x" class="center">
+                    <p style="text-align: center;">Viewer</p>
+                </td>
+            </tr>
+            <tr>
+                <td>donger</td>
+                <td></td>
+                <td>ヽ༼ຈل͜ຈ༽ﾉ</td>
+                <td>4 Seconds</td>
+                <td><img src="https://cdn.7tv.app/emote/60dba3ed232824591f5e904c/1x" class="center">
+                    <p style="text-align: center;">Viewer</p>
+                </td>
+                <td><img src="https://cdn.7tv.app/emote/60dba3ed232824591f5e904c/1x" class="center">
+                    <p style="text-align: center;">Viewer</p>
+                </td>
+            </tr>
+            <tr>
+                <td>echo</td>
+                <td></td>
+                <td>sendet die Chatsettings eines Channels</td>
+                <td></td>
+                <td><img src="https://cdn.7tv.app/emote/60afa9e860e24df01aee7be2/1x" class="center">
+                    <p style="text-align: center;">VIP</p>>
+                </td>
+                <td><img src="https://cdn.7tv.app/emote/60dba3ed232824591f5e904c/1x" class="center">
+                    <p style="text-align: center;">Viewer</p>
+                </td>
+            </tr>
+            <tr>
+                <td>ecount</td>
+                <td></td>
+                <td>sendet wie oft ein Emote genutzt wurde</td>
+                <td>5 Seconds</td>
+                <td><img src="https://cdn.7tv.app/emote/60dba3ed232824591f5e904c/1x" class="center">
+                    <p style="text-align: center;">Viewer</p>
+                </td>
+                <td><img src="https://cdn.7tv.app/emote/60dba3ed232824591f5e904c/1x" class="center">
+                    <p style="text-align: center;">Viewer</p>
+                </td>
+            </tr>
+            <tr>
+                <td>ecounttoday</td>
+                <td>ect</td>
+                <td>sendet wie oft ein Emote heute genutzt wurde</td>
+                <td>5 Seconds</td>
+                <td><img src="https://cdn.7tv.app/emote/60dba3ed232824591f5e904c/1x" class="center">
+                    <p style="text-align: center;">Viewer</p>
+                </td>
+                <td><img src="https://cdn.7tv.app/emote/60dba3ed232824591f5e904c/1x" class="center">
+                    <p style="text-align: center;">Viewer</p>
+                </td>
+            </tr>
+            <tr>
+                <td>ecountuser</td>
+                <td></td>
+                <td>sendet wie oft ein User ein bestimmtes Emote genutzt hat</td>
+                <td>5 Seconds</td>
+                <td><img src="https://cdn.7tv.app/emote/60dba3ed232824591f5e904c/1x" class="center">
+                    <p style="text-align: center;">Viewer</p>
+                </td>
+                <td><img src="https://cdn.7tv.app/emote/60dba3ed232824591f5e904c/1x" class="center">
+                    <p style="text-align: center;">Viewer</p>
+                </td>
+            </tr>
+            <tr>
+                <td>emote</td>
+                <td>cs</td>
+                <td>gibt infos über twitchemotes</td>
+                <td>3 Seconds</td>
+                <td><img src="https://cdn.7tv.app/emote/60dba3ed232824591f5e904c/1x" class="center">
+                    <p style="text-align: center;">Viewer</p>
+                </td>
+                <td><img src="https://cdn.7tv.app/emote/60dba3ed232824591f5e904c/1x" class="center">
+                    <p style="text-align: center;">Viewer</p>
+                </td>
+            </tr>
+            <tr>
+                <td>epicgames</td>
+                <td>epic</td>
+                <td>sucht spiele auf Epicgames</td>
+                <td>3 Seconds</td>
+                <td><img src="https://cdn.7tv.app/emote/60dba3ed232824591f5e904c/1x" class="center">
+                    <p style="text-align: center;">Viewer</p>
+                </td>
+                <td><img src="https://cdn.7tv.app/emote/60dba3ed232824591f5e904c/1x" class="center">
+                    <p style="text-align: center;">Viewer</p>
+                </td>
+            </tr>
+            <tr>
+                <td>esearch</td>
+                <td>bttv, ffz, 7tv</td>
+                <td>sucht nach 3rd-party Emotes</td>
+                <td>3 Seconds</td>
+                <td><img src="https://cdn.7tv.app/emote/60dba3ed232824591f5e904c/1x" class="center">
+                    <p style="text-align: center;">Viewer</p>
+                </td>
+                <td><img src="https://cdn.7tv.app/emote/60dba3ed232824591f5e904c/1x" class="center">
+                    <p style="text-align: center;">Viewer</p>
+                </td>
+            </tr>
+            <tr>
+                <td>eventping</td>
+                <td></td>
+                <td>pingt dich bei Kanalwetten wenn für den Channel Livebenachrichtigungen aktiviert sind</td>
+                <td></td>
+                <td><img src="https://cdn.7tv.app/emote/60dba3ed232824591f5e904c/1x" class="center">
+                    <p style="text-align: center;">Viewer</p>
+                </td>
+                <td><img src="https://cdn.7tv.app/emote/60dba3ed232824591f5e904c/1x" class="center">
+                    <p style="text-align: center;">Viewer</p>
+                </td>
+            </tr>
+            <tr>
+                <td>everyone</td>
+                <td></td>
+                <td>sendet eine Liste mit allem Chattern im chat</td>
+                <td>10 Seconds</td>
+                <td><img src="https://cdn.7tv.app/emote/60dba3ed232824591f5e904c/1x" class="center">
+                    <p style="text-align: center;">Viewer</p>
+                </td>
+                <td><img src="https://cdn.7tv.app/emote/60dba3ed232824591f5e904c/1x" class="center">
+                    <p style="text-align: center;">Viewer</p>
+                </td>
+            </tr>
+            <tr>
+                <td>feelsgoodman</td>
+                <td></td>
+                <td><img src="https://cdn.7tv.app/emote/603cb78973d7a5001441f99c/2x"><img src="https://cdn.7tv.app/emote/60aed217c9cf495e5be86812/2x"></td>
+                <td></td>
+                <td><img src="https://cdn.7tv.app/emote/60dba3ed232824591f5e904c/1x" class="center">
+                    <p style="text-align: center;">Viewer</p>
+                </td>
+                <td><img src="https://cdn.7tv.app/emote/60dba3ed232824591f5e904c/1x" class="center">
+                    <p style="text-align: center;">Viewer</p>
+                </td>
+            </tr>
+            <tr>
+                <td>fill</td>
+                <td></td>
+                <td>kopiert die Nachricht auf 500 Zeichen</td>
+                <td>10 Seconds</td>
+                <td><img src="https://cdn.7tv.app/emote/60dba3ed232824591f5e904c/1x" class="center">
+                    <p style="text-align: center;">Viewer</p>
+                </td>
+                <td><img src="https://cdn.7tv.app/emote/60afa9e860e24df01aee7be2/1x" class="center">
+            <p style="text-align: center;">VIP</p>
+                </td>
+            </tr>
+
 
         </tbody>
     </table>
 </body>
 
-    
-    
-      <!--  <img src="https://cdn.7tv.app/emote/60afa9e860e24df01aee7be2/1x" class="center">
+
+
+<!--  <img src="https://cdn.7tv.app/emote/60afa9e860e24df01aee7be2/1x" class="center">
             <p style="text-align: center;">VIP</p>
             <img src="https://cdn.7tv.app/emote/60dba3ed232824591f5e904c/1x" class="center">
             <p style="text-align: center;">Viewer</p>
@@ -333,5 +616,4 @@
             <img src="https://cdn.7tv.app/emote/60b1f892e7668d06b61428f0/1x" class="center">
             <p style="text-align: center;">Owner</p>
             <img src="https://cdn.7tv.app/emote/60aeef1fa564afa26e1b9f86/1x" class="center">
-            <p style="text-align: center;">Moderator</p> -->
-</html>
+            <p style="text-align: center;">Moderator</p> --></html>
